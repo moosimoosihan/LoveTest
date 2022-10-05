@@ -9,32 +9,52 @@
         android:id="@+id/mainFragment"
         android:name="com.example.lovetest.fragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_questionFragment"
-            app:destination="@id/questionFragment" />
+            app:destination="@id/questionFragment"
+            app:enterAnim="fragment_open_enter"
+            app:exitAnim="fragment_open_exit"
+            app:popEnterAnim="fragment_close_enter"
+            app:popExitAnim="fragment_close_exit" />
     </fragment>
     <fragment
         android:id="@+id/questionFragment"
         android:name="com.example.lovetest.fragment.QuestionFragment"
         android:label="fragment_question"
-        tools:layout="@layout/fragment_question" >
+        tools:layout="@layout/fragment_question">
         <action
             android:id="@+id/action_questionFragment_to_selectionFragment"
-            app:destination="@id/selectionFragment" />
+            app:destination="@id/selectionFragment"
+            app:enterAnim="fragment_open_enter"
+            app:exitAnim="fragment_open_exit"
+            app:popEnterAnim="fragment_close_enter"
+            app:popExitAnim="fragment_close_exit" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.example.lovetest.fragment.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="fragment_open_enter"
+            app:exitAnim="fragment_open_exit"
+            app:popEnterAnim="fragment_close_enter"
+            app:popExitAnim="fragment_close_exit" />
+    </fragment>
     <fragment
         android:id="@+id/selectionFragment"
         android:name="com.example.lovetest.fragment.SelectionFragment"
         android:label="fragment_selection"
-        tools:layout="@layout/fragment_selection" >
+        tools:layout="@layout/fragment_selection">
         <action
             android:id="@+id/action_selectionFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:enterAnim="fragment_open_enter"
+            app:exitAnim="fragment_open_exit"
+            app:popEnterAnim="fragment_close_enter"
+            app:popExitAnim="fragment_close_exit" />
     </fragment>
 </navigation>
