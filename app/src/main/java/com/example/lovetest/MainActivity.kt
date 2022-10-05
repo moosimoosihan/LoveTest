@@ -2,6 +2,8 @@ package com.example.lovetest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +12,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        navController = nav_host_fragment.findNavController()
+        navController = findNavController(R.id.nav_host_fragment)
     }
 }
