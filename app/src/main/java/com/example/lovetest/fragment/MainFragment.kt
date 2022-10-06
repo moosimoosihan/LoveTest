@@ -32,12 +32,13 @@ class MainFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-        override fun onViewCreated(view: View, savedInstanceState: Bundle?){
-            super.onViewCreated(view, savedInstanceState)
-            navController = Navigation.findNavController(view)
-            btn_next.setOnClickListener {
-                navController.navigate(R.id.action_mainFragment_to_questionFragment)
-            }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+        super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
+        btn_next.setOnClickListener {
+            navController.navigate(R.id.action_mainFragment_to_questionFragment)
         }
     }
 

@@ -13,10 +13,10 @@
         <action
             android:id="@+id/action_mainFragment_to_questionFragment"
             app:destination="@id/questionFragment"
-            app:enterAnim="fragment_open_enter"
-            app:exitAnim="fragment_open_exit"
-            app:popEnterAnim="fragment_close_enter"
-            app:popExitAnim="fragment_close_exit" />
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/questionFragment"
@@ -26,10 +26,10 @@
         <action
             android:id="@+id/action_questionFragment_to_selectionFragment"
             app:destination="@id/selectionFragment"
-            app:enterAnim="fragment_open_enter"
-            app:exitAnim="fragment_open_exit"
-            app:popEnterAnim="fragment_close_enter"
-            app:popExitAnim="fragment_close_exit" />
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -39,10 +39,10 @@
         <action
             android:id="@+id/action_resultFragment_to_mainFragment"
             app:destination="@id/mainFragment"
-            app:enterAnim="fragment_open_enter"
-            app:exitAnim="fragment_open_exit"
-            app:popEnterAnim="fragment_close_enter"
-            app:popExitAnim="fragment_close_exit" />
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/selectionFragment"
@@ -52,9 +52,9 @@
         <action
             android:id="@+id/action_selectionFragment_to_resultFragment"
             app:destination="@id/resultFragment"
-            app:enterAnim="fragment_open_enter"
-            app:exitAnim="fragment_open_exit"
-            app:popEnterAnim="fragment_close_enter"
-            app:popExitAnim="fragment_close_exit" />
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 </navigation>
