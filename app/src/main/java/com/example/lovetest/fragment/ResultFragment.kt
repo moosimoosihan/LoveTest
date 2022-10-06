@@ -9,6 +9,8 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.lovetest.R
 
+import kotlinx.android.synthetic.main.fragment_result.*
+
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
